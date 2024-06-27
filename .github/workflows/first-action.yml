@@ -1,13 +1,13 @@
 name: First workflow
-on: workflow_dispatch 
 
-jobs: 
+on:
+  workflow_dispatch:
 
-runs-on: ubuntu-latest 
-  
-steps:
- - name: Print greeting
-   run: echo "Hello World!"
-      
+jobs:
+  my_job:
+    name: deploy to staging
+    runs-on: ubuntu-22.04
+
+
 
 
