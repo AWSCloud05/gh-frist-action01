@@ -1,8 +1,8 @@
 name: First workflow
-on: workflow_dispatch 
+on: 
 jobs: 
   first-job: 
-  runs-on: ubuntu
+  runs-on: ubuntu-24.04
   steps:
   - name: Print greeting
   run: echo "Hello World!"
